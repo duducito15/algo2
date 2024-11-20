@@ -15,11 +15,16 @@ public class Array02 {
         numeros[9] = -8;
 
         System.out.println("El array tiene 10 elementos ¿cuál de ellos quiere ver?");
+
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("numeros[" + i + "] = " + numeros[i]);
+        }
+
         System.out.println("ingrese un valor del 0 al 9");
-        
+
         int indice = Integer.parseInt(System.console().readLine());
-        System.out.println("El elemento que se encuentra en la posición "+indice);
-        System.out.println("es el "+numeros[indice]);
+        System.out.println("El elemento que se encuentra en la posición " + indice);
+        System.out.println("es el " + numeros[indice]);
 
     }
 }
