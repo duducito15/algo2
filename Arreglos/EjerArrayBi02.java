@@ -8,8 +8,8 @@ public class EjerArrayBi02 {
         System.out.println("Ingrese los numeros (enteros) en el array");
         for (f = 0; f < 4; f++) {
             for (c = 0; c < 5; c++) {
-                //System.out.print("Fila " + f + ", Columna " + c + ": ");
-                num[f][c] = (int) ((Math.random()*50)+1);//Integer.parseInt(System.console().readLine());
+                // System.out.print("Fila " + f + ", Columna " + c + ": ");
+                num[f][c] = (int) ((Math.random() * 50) + 1);// Integer.parseInt(System.console().readLine());
             }
         }
 
@@ -23,5 +23,21 @@ public class EjerArrayBi02 {
             }
             System.out.printf("|%7d\n", sumaFila);
         }
+        for (c = 0; c < 5; c++) {
+            System.out.print("-------");
+        }
+        System.out.println("---------");
+        // Suma de las columnas
+        int sumaColumna;
+        int sumaTotal = 0;
+        for (c = 0; c < 5; c++) {
+            sumaColumna = 0;
+            for (f = 0; f < 4; f++){
+                sumaColumna = sumaColumna + num[f][c];
+            }
+            sumaTotal = sumaTotal+sumaColumna;
+            System.out.printf("%7d  ", sumaColumna);
+        }
+        System.out.printf("|%7d  ", sumaTotal);
     }
 }
