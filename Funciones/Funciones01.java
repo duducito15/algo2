@@ -11,7 +11,6 @@ public class Funciones01 {
             System.out.println("El " + n + " no es primo.");
         }
     }
-
     public static boolean esPrimo(int x) {
         for (int i = 2; i < x; i++) {
             if ((x % i) == 0) {
