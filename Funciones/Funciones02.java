@@ -1,5 +1,7 @@
 package Funciones;
 
+import Librerias.Basicas;
+
 public class Funciones02 {
     public static void main(String[] args) {
         System.out.println("Ingrese el primer numero: ");
@@ -14,17 +16,6 @@ public class Funciones02 {
         System.out.println("La division: " + miDivision(n1, n2));
     }
 
-    public static int miSuma(int x, int y){
-        return x + y;
-    }
-    public static int miResta(int x, int y){
-        return x - y;
-    }
-    public static int miMulti(int x, int y){
-        return x * y;
-    }
-    public static double miDivision(int x, int y){
-        return (double)x / (double)y;
-    }
+   
 
 }
