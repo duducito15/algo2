@@ -25,4 +25,20 @@ public class Gato {
     return this.color;
  }
 
+ //Haz que el gato maulle
+ void maullar(){
+    System.out.println("Miauuuuu, Miauuuu");
+ }
+
+ //haz que gato ronronee
+ void ronronear(){
+    System.out.println("mrrrrrr, mrrrrr");
+ }
+
+ //Haz que el gato coma
+ /*
+  * A los gatos les gusta el pescado, si le das otra 
+  * comida lo rechaza
+  */
+  
 }
