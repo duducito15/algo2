@@ -40,5 +40,12 @@ public class Gato {
   * A los gatos les gusta el pescado, si le das otra 
   * comida lo rechaza
   */
-  
+  void come(String comida){
+    if (comida.equals("pescado")) {
+        System.out.println("Ñam ñam!!!");
+    } else {
+        System.out.println("Guacala!!!");
+    }
+  }
+
 }
