@@ -48,4 +48,16 @@ public class Gato {
     }
   }
 
+  //Pon a pelear a dos gatos
+  //Solo se pelean si ambos son machos
+
+  void peleaCon(Gato contrincante){
+   if (this.sexo.equals("macho")) {
+      System.out.println("Ven aqui que te voy moler a palos!!!!");
+   } else {
+      System.out.println("Vamos a ronronear!!!!");
+   }
+  }
+
+
 }
