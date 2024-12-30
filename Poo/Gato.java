@@ -52,10 +52,14 @@ public class Gato {
   //Solo se pelean si ambos son machos
 
   void peleaCon(Gato contrincante){
-   if (this.sexo.equals("macho")) {
-      System.out.println("Ven aqui que te voy moler a palos!!!!");
-   } else {
+   if (this.sexo.equals("hembra")) {
       System.out.println("Vamos a ronronear!!!!");
+   } else {
+      if (contrincante.getSexo().equals("hembra")) {
+         System.out.println("Vamos a ronronear!!!!");
+      } else {
+         System.out.println("Ven aqui que te voy moler a palos!!!!");
+      }
    }
   }
 
