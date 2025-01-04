@@ -18,5 +18,21 @@ public class PruebaCubo {
         System.out.println("Llena Cubote \n");
         miCubote.llena();
         miCubote.pintaCubo();
+
+        System.out.println("Vacia Cubote \n");
+        miCubote.vacia();
+        miCubote.pintaCubo();
+
+        System.out.println("\nAhora vuelco el contenido de el cubito en el cubote\n");
+        miCubito.vuelvaEn(miCubote);
+
+        System.out.println("Cubito \n");
+        miCubito.pintaCubo();
+
+        System.out.println("Cubote \n");
+        miCubote.pintaCubo();
+
+
+
     }
 }
