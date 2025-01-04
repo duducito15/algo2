@@ -13,20 +13,20 @@ public class Cuadrado {
         String resultado = "";
 
         for (i = 0; i < this.lado; i++) {
-            resultado = resultado + "&&";
+            resultado = resultado + "██";
         }
         resultado = resultado + "\n";
 
         for (i = 1; i < this.lado - 1; i++) {
-            resultado = resultado + "&&";
-            for (espacios = 1; espacios < this.lado; espacios++) {
+            resultado = resultado + "██";
+            for (espacios = 1; espacios < this.lado -1 ; espacios++) {
                 resultado = resultado + "  ";
             }
-            resultado = resultado + "&&\n";
+            resultado = resultado + "██\n";
         }
 
         for (i = 0; i < this.lado; i++) {
-            resultado = resultado + "&&";
+            resultado = resultado + "██";
         }
         resultado = resultado + "\n";
 
