@@ -2,7 +2,7 @@ package Poo;
 
 public class Cubo {
     // Atributos
-    int capacidad; // litros maximo
+    private int capacidad; // litros maximo
     int contenido; // litros actuales
 
     // Metodos
