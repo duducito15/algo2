@@ -1,6 +1,6 @@
 package Poo;
 
-public class Gato {
+public class Gato implements Comparable<Gato> {
    // Atributos
    public String nombre, color, raza, sexo;
    public int edad;
@@ -22,6 +22,10 @@ public class Gato {
 
    public String getNombre() {
       return this.nombre;
+   }
+
+   public String getSexo() {
+      return this.sexo;
    }
 
    // Haz que el gato maulle
@@ -48,6 +52,17 @@ public class Gato {
       }
    }
 
+   public int compareTo(Gato g) {
+      return (this.nombre).compareTo(g.getNombre());
+   }
+
+   public boolean equals(Gato g){
+      return (this.nombre).equals(g.getNombre());
+   }
+
+   public String toString() {
+      return "Nombre: " + this.nombre + "\nRaza: " + this.raza + "\nColor: " + this.color;
+   }
    // Pon a pelear a dos gatos
    // Solo se pelean si ambos son machos
 
