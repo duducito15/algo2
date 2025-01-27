@@ -7,8 +7,12 @@ import java.io.IOException;
 
 public class Fichero01 {
     public static void main(String[] args) {
+        System.out.println("Ingrese el nombre de la ciudad (abancay, andahuaylas o cusco): ");
+        String nombreCiudad = System.console().readLine();
+
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\40160915\\Desktop\\algo2\\Ficheros\\abancay.txt"));
+            BufferedReader br = new BufferedReader(
+                    new FileReader("C:\\Users\\40160915\\Desktop\\algo2\\Ficheros\\" + nombreCiudad + ".txt"));
 
             String linea = "";
 
@@ -19,9 +23,9 @@ public class Fichero01 {
 
             br.close();
         } catch (FileNotFoundException fnfe) {
-            System.out.println("No se encontro el fichero abancay.txt");
+            System.out.println("No se encontro el fichero " + nombreCiudad + ".txt");
         } catch (IOException ioe) {
-            System.out.println("No se puede leer el fichero abancay.txt");
+            System.out.println("No se puede leer el fichero " + nombreCiudad + ".txt");
         }
     }
 }
